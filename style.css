@@ -1,0 +1,344 @@
+body{
+    background-color: rgb(223, 226, 245);
+}
+.container{
+    display:block;
+    justify-content: center;
+    text-align: center;
+    
+}
+ 
+.row{
+    column-gap: 100px;
+    display: flex;
+    justify-content: center;
+   
+}
+.text{
+    margin-top: 10px;
+    
+}
+.text::after{
+    transition: 2s;
+}
+
+
+          /* pin generator */
+.pin{
+    background-color: rgba(2, 59, 42, 0.973);
+    width: 300px;
+    height: 450px;
+   
+    margin-top: 60px;
+    border-radius: 8px;
+    
+    
+}
+     /* display */
+.dis{
+    display: flex;
+    justify-content: center;
+    padding-top:30px;
+    
+}
+.display{
+    width: 270px;
+    height: 70px;
+    background-color: rgb(255, 254, 253);
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.display p{
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+        /* generate button */
+.button{
+    display: flex;
+    justify-content: center;
+    
+}
+.press{
+    border: 5px solid rgb(6, 126, 52);
+    border-radius: 50%;
+    height: 220px;
+    width: 200px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    box-shadow: -3px 4px 2px -1px rgb(30, 128, 0),10px 10px 22px 7px rgb(7, 80, 35);
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(221, 128, 5, 0.37);
+    background-color: rgb(23, 5, 102);
+    color: white;
+    
+}
+.press:hover{
+    background-color: rgb(11, 3, 44);
+    box-shadow: -3px 4px 2px -1px rgb(3, 97, 31),10px 10px 22px 7px rgba(162, 140, 77, 1);
+    text-shadow: 2px 2px 5px rgba(202, 3, 3, 0.37);
+}
+
+#clearButton{
+  background-color: rgb(82, 4, 128);
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+#clearButton:hover{
+  background-color: red;
+}
+
+
+
+  /* pin submit */
+
+
+.submit{
+    background-color: rgb(2, 85, 2);
+    width: 300px;
+    
+    margin-top: 60px;
+    border-radius: 8px;
+    
+}
+
+
+  /* disply/intput */
+
+
+.display2{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+.dis2{
+    display: flex;
+    justify-content: center;
+    padding-top:30px;
+   
+    
+}
+
+.display2 input{
+    width: 220px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+
+   /* Number Input Button  */
+
+
+.first{
+    text-align: center;
+    padding:5px;
+   
+  }
+  .second{
+    text-align: center;
+    padding: 5px;
+   
+  }
+  .Third{
+    text-align: center;
+    padding: 5px;
+    
+  }
+  .fourth{
+    text-align: center;
+    padding: 5px;
+  
+    
+  }
+  .btn{
+    padding: 15px;
+    border-radius: 40%;
+    background-color: rgb(15, 14, 14);
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    margin-left: 15px;
+    margin-right: 15px;
+   
+  }
+  .btn:hover{
+    background-color: red;
+  }
+  .btn0{
+    padding: 15px;
+    border-radius: 40%;
+    background-color: rgb(15, 14, 14);
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    margin-right: 10px;
+  }
+  .btn0:hover{
+    background-color: red;
+  }
+  .btn1{
+    padding-left:45px;
+    padding-right: 45px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 10px;
+    background-color: rgb(15, 14, 14);
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+  }
+  .btn1:hover{
+    background-color: blueviolet;
+  }
+  .button1{
+    padding: 20px;
+  }
+
+  /* submit button */
+  .btn3{
+    padding-left: 61px;
+    padding-right:61px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(5, 156, 68);
+    border: none;
+    border-radius: 5px;
+  }
+  .btn3:hover{
+    background-color: rgb(243, 24, 24);
+  }
+
+  
+
+/* text animation  */
+
+.text1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.text {
+    color: #110507; font-weight:bold; font-size:3em;
+    
+    animation-name: focus-in-expand;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+        
+    /* shorthand
+    animation: focus-in-expand 1.2s linear 0s 1 normal none;*/
+}
+@keyframes focus-in-expand {
+        
+    0% {
+        letter-spacing:-.5em;
+        filter:blur(12px);
+        opacity:0;
+    }
+    100% {
+        filter:blur(0);
+        opacity:1;
+    }
+}
+
+
+
+/* 1st match  */
+.match{
+  display: none;
+}
+.sucess{
+  text-align: center;
+  
+}
+.sucess h1{
+  font-size: 3.3rem;
+  color: green;
+}
+.photo1{
+  display: flex;
+  justify-content: center;
+}
+.photo2{
+  display: flex;
+  justify-content: center;
+}
+.photo2 img{
+  width: 100%;
+  height:300px;
+}
+
+
+
+
+/* not match */
+
+.notmatch{
+  display: none;
+}
+.sad{
+  text-align: center;
+  
+}
+.sad h1{
+  font-size: 3.3rem;
+  color: red;
+}
+
+.photo3{
+  display: flex;
+  justify-content: center;
+}
+.photo2 img{
+  width: 100%;
+  height:300px;
+}
+
+/* back button */
+#back{
+  background-color: rgb(82, 4, 128);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+#back:hover{
+  background-color: red;
+}
+#back2{
+  background-color: rgb(82, 4, 128);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+#back2:hover{
+  background-color: red;
+}
